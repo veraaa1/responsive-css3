@@ -1,0 +1,145 @@
+*{margin: 0px;padding: 0px;}
+.clearfix:after{display: block;content: "";visibility: none;height:0;clear: both;}
+html,body{font-size: 10px;}
+@font-face{font-family: myfont;src:url('../fonts/APC.ttf');}
+@font-face{font-family: myfont2;src:url('../fonts/vera-webfont.ttf');}
+@font-face{font-family: myfont3;src:url('../fonts/thickfont.ttf');}
+@font-face{font-family: myfont4;src:url('../fonts/font4.ttf');}
+@keyframes breath{0%{text-shadow:1px 1px 1px #453333;}25%{text-shadow:1px 1px 10px #453333;}75%{text-shadow:1px 1px 5px #453333;}100%{text-shadow:1px 1px 1px #453333;}}
+@keyframes doudong{0%{transform: rotate(10deg)}20%{transform: rotate(-5deg)}50%{transform: rotate(10deg)}75%{transform: rotate(-5deg)}100%{transform: rotate(-10deg)}}
+@keyframes doudong2{0%{transform: rotate(-10deg)}20%{transform: rotate(5deg)}50%{transform: rotate(-10deg)}75%{transform: rotate(5deg)}100%{transform: rotate(10deg)}}
+/*Header部分样式*/
+.wrap{width: 94.1176%;margin: 0 auto;}
+header{width: 100%;}
+.header-top{height: 43px; width: 100%;background-image: url(../images/flag.jpg);background-repeat: repeat-x;}
+.header-min{width:100%;overflow: hidden;}
+.header-min h2{font-family: myfont;font-size: 4rem;color: #000;text-shadow:1px 1px 1px #000;line-height: 2.375;}
+.header-min h2 span{color: #dfd9d9;text-shadow:1px 1px 1px #e4e2e3;}
+nav{width: 100%; display: table;background:linear-gradient(#fff,#e4e4e4)}
+#sel{display: none;border-radius: 5px;height: 35px;width: 40%;}
+nav>ul{display: table-row;list-style: none;}
+nav>ul>li{display: table-cell;}
+nav>ul>li a{text-decoration: none;font-family: myfont;font-size: 2rem;color: #000;font-weight: bolder;text-shadow:1px 1px 1px #7c7c7c;line-height: 1.75;display: block;
+    width: 100%;text-align: center;}
+.red{color: #ff0109;text-shadow:1px 1px 1px #f27f84;}
+nav>ul>li a:hover{animation:breath 1.5s infinite;}
+/*Main部分样式*/
+.main{width: 100%;margin-top: 2.5%;border-top: 4px double #d5d5d5;overflow: hidden;padding-bottom: 2.8490%}
+.main-left{width: 25%;float: left;background: linear-gradient(#fff,#e6e6e6,#fff);box-shadow:5px 5px 5px 2px #575757;margin-top: 2.1739%;padding-bottom: 4.0217%;overflow: hidden;}
+.main-left h2{font-family: myfont;font-weight: bolder;line-height: 2.4;font-size: 3rem; }
+.bottom-p{line-height: 2.4;font-size: 3rem;font-family: myfont;font-weight: bolder;}
+.main-left1,.main-left2{width: 43.75%;float: left;margin-left: 5%;}
+img{max-width: 100%}
+.main-left1 img,.main-left3 img{animation:doudong 0.5s forwards;box-shadow: -1px 1px 3px 1px #8c8c8c;border-radius: 5px;width: 86%;}
+.main-left2 img,.main-left4 img{animation:doudong2 0.5s forwards;box-shadow: 1px 1px 3px 1px #8c8c8c;border-radius: 5px;width: 86%;}
+.main-left3,.main-left4{width: 43.75%;float: left;margin-left: 5%;}
+.button{background: linear-gradient(#dbdbdb,#b0b0b0);border-radius: 30px;border: 1px solid #a29e9f;margin-top: 12.6123%;box-shadow: 0px 1px 1px 1px #686868;transition:all 1s;}
+.button a{text-decoration: none;line-height: 1.5;color: #414141;font-family: myfont;display: block;text-align: center;font-size: 2rem;}
+.button:hover{box-shadow: 0px 3px 5px 1px #000;}
+.main-right{ width: 73.75%;float: right;margin-top: 2.1739%;background: url("../images/imgperson.jpg") 40px bottom no-repeat;background-size: 22.4538%;}
+article{width: 66.3841%;margin-left: 3.4188%;padding-left: 23.7749%;float: right;}
+article h2{font-family: myfont;text-shadow:2px 2px 0px #dbd7d8;font-size:8rem;}
+article h3{font-family: myfont2;text-shadow:2px 2px 0px #dbd7d8;font-size:4rem;color: #757374;}
+article p{font-size: 4rem;font-family:myfont3;line-height: 1.66; }
+article p a{font-family: myfont2;font-weight: bold;color: #747474;text-decoration: none;transition:all 1s;}
+article p a:hover{color: #000;}
+body .button-bottom a{display: block;width: 56.6951%;height: 85px;border-radius: 15px;background: linear-gradient(#ec575b,#ad181c);box-shadow:2px 2px 5px 2px #8f8f8f;border:1px solid #fff;text-decoration: none; line-height: 77px;font-family: myfont4;font-size: 3rem;color: #fff;text-shadow:0px 1px 0px #fff;transition:color 3s,text-shadow 6s,border 4s;text-align: center;margin-top: 55.1082%;margin-left: 33.4786%;position: relative;}
+.button-bottom span{line-height: 2.25;font-size: 4rem;transition:all 0.5s;position: absolute;
+    top: 1px;height: 45px;width: 20px; }
+.button-bottom a:hover {color: #000;text-shadow:0px 1px 0px #fff;border-color:#000;}
+/*footer部分样式*/
+footer{width: 94.1176%;border-top:5px double #d5d5d5;}
+.footer-content{width: 100%}
+.footer-content p{font-family: myfont4;color: #747474;line-height: 4;text-align: center;font-size: 2rem;}
+.footer-bottom{height: 42px; background: url(../images/flag-up.jpg) repeat-x;}
+/*媒体查询*/
+@media screen and (max-width:768px){
+	.main-left,.main-right{width: 98%;margin-left: 1%;}
+	article{width: 100%;padding-top: 65%}
+	.main-right{background-position:center top }
+	article h2{font-size: 40px;text-align: center}
+	.header-min{width: 98%;}
+	.header-min h2{font-size: 30px;text-align: center;text-align: center}
+	article h3{font-size: 20px;text-align: center}
+	article p{font-size: 18px;line-height: 25px;text-align: center}
+	article p a{font-size: 16px;}
+    body .button-bottom a{font-size: 20px;width: 98%;margin-top: 123%;line-height: 45px;height: 45px;margin-left: 0px;}
+    .button-bottom span{line-height: 2.25;font-size: 4rem;transition:all 0.5s;position: absolute;right: 87px;
+    top: -22px;height: 45px;width: 20px; }
+    .footer-content p{line-height: 50px;}
+    nav ul{display: none;}
+    nav{background: none;}
+		nav #sel{display: block;outline: none;}
+		.main-left h2{font-size: 3.0rem;padding-left: 1.5%;}
+		.main-left p{font-size: 3.0rem;padding-left: 1.5%;}
+}
+@media screen and (max-width:322px){
+	.main-left,.main-right{width: 98%;margin-left: 1%;}
+	article h2{font-size: 30px;}
+	.header-min{width: 98%;}
+	.header-min h2{font-size: 25px;text-align: center;}
+	article h3{font-size: 15px;}
+	article p{font-size: 14px;line-height: 15px;}
+	article p a{font-size: 14px;}
+   body .button-bottom a{font-size: 20px;width: 98%;margin-top: 123%;line-height: 45px;height: 45px;margin-left: 0px;}
+    .button-bottom span{line-height: 2.25;font-size: 4rem;transition:all 0.5s;position: absolute;right: 87px;
+    top: -22px;height: 45px;width: 20px; }
+    .footer-content p{line-height: 50px;}
+    nav ul{display: none;}
+    nav{background: none;}
+    /* .main-right{background-position: left top;} */
+		nav #sel{display: inline-block;outline: none;}
+		.main-left h2{font-size: 3.0rem;padding-left: 1.5%;}
+		.main-left p{font-size: 3.0rem;padding-left: 1.5%;}
+
+}
+@media screen and (min-width:321px) and (max-width: 400px){
+	.main-left,.main-right{width: 98%;margin-left: 1%;}
+	article h2{font-size: 30px;}
+	.header-min{width: 98%;}
+	.header-min h2{font-size: 25px;text-align: center;}
+	article h3{font-size: 18px;}
+	article p{font-size: 16px;line-height: 18px;}
+	article p a{font-size: 16px;}
+  body .button-bottom a{font-size: 20px;width: 98%;margin-top: 115%;line-height: 45px;height: 45px;margin-left: 0px;}
+    .button-bottom span{line-height: 2.25;font-size: 4rem;transition:all 0.5s;position: absolute;right: 87px;
+    top: -22px;height: 45px;width: 20px; }
+    .footer-content p{line-height: 50px;}
+    nav ul{display: none;}
+    nav{background: none;}
+    /* .main-right{background-position: left top;} */
+		nav #sel{display: inline-block;outline: none;}
+				.main-left h2{font-size: 3.0rem;
+		padding-left: 1.5%;}
+		.main-left p{font-size: 3.0rem;padding-left: 1.5%;}
+
+}
+@media screen and (min-width:700px) and (max-width: 800px){
+	html,body{font-size: 7px;}
+	.main-left,.main-right{width: 98%;margin-left: 1%;}
+	article h2{font-size: 40px;}
+	.header-min{width: 98%;}
+	.header-min h2{font-size: 40px;text-align: center;}
+	article h3{font-size: 25px;}
+	article p{font-size: 25px;line-height: 50px;}
+	article p a{font-size: 25px;}
+    body .button-bottom a{font-size: 20px;width: 98%;margin-top: 123%;line-height: 45px;height: 45px;margin-left: 0px;}
+    .button-bottom span{line-height: 2.25;font-size: 4rem;transition:all 0.5s;position: absolute;right: 87px;
+    top: -22px;height: 45px;width: 20px; }
+    .footer-content p{line-height: 50px;}
+    nav ul{display: none;}
+    nav{background: none;}
+    /* .main-right{background-position: left top;} */
+		nav #sel{display: inline-block;outline: none;}
+		
+
+}
+@media screen and (min-width:801px) and (max-width: 900px){
+	html,body{font-size: 6px;}
+}
+@media screen and (min-width:901px) and (max-width: 1100px){
+	html,body{font-size: 7px;}
+}
+@media screen and (min-width:1100px) and (max-width: 1200px){
+	html,body{font-size: 8px;}
+}
